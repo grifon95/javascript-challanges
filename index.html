@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>JavaScript on Steroids</title>
+  </head>
+  <body>
+    <div class="container-1">
+      <h2>Challange 1: Your Age in Days</h2>
+      <div class="flex-box-container1">
+        <div>
+          <button class="btn btn-primary" onclick="ageInDays()">
+            Click me
+          </button>
+        </div>
+        <div>
+          <button class="btn btn-danger" onclick="reset()">reset</button>
+        </div>
+      </div>
+      <div class="flex-box-container1">
+        <div id="flex-box-result"></div>
+      </div>
+    </div>
+    <div class="container-2">
+      <h2>Challange 2: Cat Generator</h2>
+      <button
+        class="btn btn-success"
+        id="cat-generator"
+        onclick="generateCat()"
+      >
+        Generate Cat
+      </button>
+      <div class="flex-box-container-2"></div>
+    </div>
+    <div class="container-3">
+      <h2>Challange 3: Rock, Paper, Scissors</h2>
+      <div class="flex-box-rps" id="flex-box-rps-div">
+        <img
+          src="/img/rock.png"
+          alt="rock"
+          id="rock"
+          class="rock"
+          onclick="rpsGame(this)"
+        />
+        <img
+          src="/img/paper.png"
+          alt="paper"
+          id="paper"
+          class="paper"
+          onclick="rpsGame(this)"
+        />
+        <img
+          src="/img/scissors.jpg"
+          alt="scissors"
+          id="scissors"
+          class="scissors"
+          onclick="rpsGame(this)"
+        />
+      </div>
+    </div>
+    <div class="container-4">
+      <h2>Challange 4: Change the Color of All Buttons</h2>
+      <div class="flex-box-pick-color">
+        <form action="">
+          <select
+            name="my-select"
+            id="my-select"
+            onchange="buttonColorChange(this)"
+          >
+            <option value="random">Random</option>
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+            <option value="reset">Reset</option>
+          </select>
+        </form>
+
+        <button class="btn btn-primary">Wee!</button>
+        <button class="btn btn-danger">Yahoo!</button>
+        <button class="btn btn-warning">Google!</button>
+        <button class="btn btn-success">Facebook!</button>
+      </div>
+    </div>
+    <div class="container-5">
+      <h2>Challange 5: Blackjack</h2>
+      <h4>Lets play</h4>
+      <div class="blackjack-flexbox-div">
+        <div class="blackjack-player-div">
+          <div class="blackjack-player-div-score">
+            You: <span class="score-player">0</span>
+          </div>
+          <div class="blackjack-player-div-cards"></div>
+        </div>
+        <div class="blackjack-dealer-div">
+          <div class="blackjack-dealer-div-score">
+            Dealer: <span class="score-dealer">0</span>
+          </div>
+          <div class="blackjack-dealer-div-cards"></div>
+        </div>
+      </div>
+      <div class="blackjack-buttons-div-whole">
+        <div class="blackjack-buttons-div">
+          <button class="hit">Hit</button>
+          <button class="stand">Stand</button>
+          <button class="deal">Deal</button>
+        </div>
+      </div>
+      <div class="blackjack-table-container">
+        <table class="blackjack-table">
+          <tr>
+            <td>Wins</td>
+            <td>Losses</td>
+            <td>Draws</td>
+          </tr>
+          <tr>
+            <td class="wins-player">0</td>
+            <td class="losses-player">0</td>
+            <td class="draws-player">0</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="script.js "></script>
+  </body>
+</html>
